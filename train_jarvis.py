@@ -51,8 +51,9 @@ print(f"Model loaded. Total parameters: {total_params:,}")
 #optimizer
 optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
 
+
 #training loop
-Num_Epochs = 3
+Num_Epochs = 50
 print(f"\nStarting training for {Num_Epochs} epochs...")
 
 for epoch in range(Num_Epochs):
